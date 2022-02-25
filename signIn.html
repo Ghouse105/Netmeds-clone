@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signIn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    
+    <script
+      src="https://kit.fontawesome.com/40bdc223da.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+        .container {
+    height:80px;
+    width:100%;
+    background-color: #32aeb1;
+}
+.top{
+    height:50%;
+    width:100%;
+    display:flex;
+}
+
+}
+.shop {
+    height:350px;
+    width:97%;
+    margin-left:-15px;
+    margin-top:-15px;
+    
+}
+.shop>img {
+    width:100%;
+    height:100%;
+}
+.logo {
+    height:100%;
+    width:200px;
+   
+    padding-left: 120px;
+    
+}
+img {
+   margin-top: 20px;
+}
+.search {
+    height: 48px;
+    width:650px;
+    position: relative;
+    background: #ffffff;
+    border-radius: 6px;
+    line-height: normal;
+    margin-left: 10px;
+    margin-top: 15px;
+    display: flex;    
+}
+p{
+    margin-left: 15px;
+}
+h3{
+    color:white;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-weight: 400;
+    font-family: LatoSemiBold;
+}
+#menu {
+    width:70%;
+    height:50px;
+    margin:auto;
+    display:flex;
+}
+h4 {
+    margin-left:30px;
+    margin-top: 10px;
+    font-style: Lato;
+    color:#151b39;
+    font-weight: 400;
+}
+.cart {
+    display:flex;
+}
+.nav {
+    color:#ffffff;
+   
+    
+}
+.navbar {
+    height:44px;
+    width:28%;
+    margin-top:30px;
+    display:flex;
+    margin-left:30px;
+    
+}
+.up {
+    margin-top:-20px;
+    margin-left:23px;
+
+}
+.up1{
+    margin-top: -3px;
+    margin-left: 10px;
+}
+.upload {
+    height:100%;
+    width :28%;
+    
+}
+.cart {
+    height:100%;
+    width:20%;
+    margin-left: -20px;
+    
+}
+.sign {
+    height:100%;
+    width:40%;
+    
+}
+img {
+    margin-left:50px;
+    border-radius: 10px;
+}
+body {
+    background-color: #f6f6f7;
+}
+.page {
+    height:550px;
+    width:70%;
+    margin:auto;
+    margin-top:4%;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    display:flex;
+    
+}
+.left {
+    height:100%;
+    width:50%;
+    
+}
+.right {
+    heigt:100%;
+    width:50%;
+    
+}
+.right>h2 {
+    text-align: center;
+}
+.input {
+    margin-top:4%;
+}
+.text{
+    border: 1px solid #32aeb1;
+    height: 40px;
+    width: 80%;
+    margin-left: 17px;
+    border-radius: 5px;
+}
+button{
+    border: 0px;
+    background-color: #32aeb1;
+    border-radius: 10px;
+    padding: 10px 90px;
+    margin-top: 10%;
+    margin-left: 110px;
+    color:#ffffff;
+}
+    </style>
+   
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="logo">
+                <img src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg">
+            </div>
+            <div class="search">
+                <p>Deliver to</p>
+                <input style="margin-left:100px; width:60%; border:1px solid#ffffff ;"; id="search" type="text" placeholder="Search for medicine & wellness products..."> 
+            </div>
+            <div class="navbar">
+               <div class="upload">
+                <a class="nav" href="#">
+                    <i class="fas fa-receipt"></i></a>
+                    <h3 class="up">Upload</h3>
+               </div>
+               <div class="cart">
+                <a class="nav" href="#">
+                    <i class="fas fa-shopping-cart"></i></a>
+                    <h3 class="up1">Cart</h3>
+               </div>
+               <div class="sign">
+                <a class="nav" href="#">
+                    <i class="fas fa-user-circle"></i> </a>
+                    <h3 class="up">Sign in/Sign up</h3>
+               </div>
+            </div>
+           
+        </div>
+    </div>
+    <div class="page">
+        <div class="left">
+            <img src="https://www.netmeds.com/images/cms/wysiwyg/cms/1588773798_sign-in-banner-new.png">
+        </div>
+        <div class="right">
+            <h2>Sign In</h2>
+            <p>Sign In to access your orders, special offers, health tips and more!</p>
+
+            <div class="input">
+                <input type="email" placeholder="E-Mail Address" class="text" id="email">
+            </div>
+
+            <div class="input">
+                 <input type="password" placeholder="Enter Password" class="text" id="pass"> 
+            </div>
+            <div class="button" id="singin">
+                <button>
+                    Sign In
+                </button>
+        </div>
+        
+     </div>
+</body>
+</html>
+
+
+<script>
+    document.querySelector("button").addEventListener("click", signIn);
+    var regUsers = JSON.parse(localStorage.getItem("userData"));
+  
+    function signIn() {
+      var email = document.querySelector("#email").value;
+      var pass = document.querySelector("#pass").value;
+  
+      for (var i = 0; i < regUsers.length; i++) {
+        if (regUsers[i].emailAddress == email && regUsers[i].passWord == pass) {
+            alert("Log in Successful");
+          window.location.href = "home.html";
+         
+        }
+    }
+    
+    }
+  </script>

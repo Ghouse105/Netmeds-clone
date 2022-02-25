@@ -1,0 +1,252 @@
+.container {
+    height:80px;
+    width:100%;
+    background-color: #32aeb1;
+}
+.top{
+    height:50%;
+    width:100%;
+    display:flex;
+}
+
+#code {
+    color:#32aeb1;
+    background-color: #ffffff;
+}
+.shop {
+    height:350px;
+    width:97%;
+    margin-left:-15px;
+    margin-top:-15px;
+    
+}
+.shop>img {
+    width:100%;
+    height:100%;
+}
+.logo {
+    height:100%;
+    width:200px;
+   
+    padding-left: 120px;
+    
+}
+img {
+   margin-top: 20px;
+}
+.search {
+    height: 48px;
+    width:650px;
+    position: relative;
+    background: #ffffff;
+    border-radius: 6px;
+    line-height: normal;
+    margin-left: 10px;
+    margin-top: 15px;
+    display: flex;    
+}
+p{
+    margin-left: 15px;
+}
+h3{
+    color:white;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-weight: 400;
+    font-family: LatoSemiBold;
+}
+#menu {
+    width:70%;
+    height:50px;
+    margin:auto;
+    display:flex;
+}
+h4 {
+    margin-left:30px;
+    margin-top: 10px;
+    font-style: Lato;
+    color:#151b39;
+    font-weight: 400;
+}
+.cart {
+    display:flex;
+}
+.nav {
+    color:#ffffff;
+   
+    
+}
+.navbar {
+    height:44px;
+    width:28%;
+    margin-top:30px;
+    display:flex;
+    margin-left:30px;
+    
+}
+.up {
+    margin-top:-20px;
+    margin-left:23px;
+
+}
+.up1{
+    margin-top: -3px;
+    margin-left: 10px;
+}
+.upload {
+    height:100%;
+    width :28%;
+    
+}
+.cart {
+    height:100%;
+    width:20%;
+    margin-left: -20px;
+    
+}
+.sign {
+    height:100%;
+    width:40%;
+    
+}
+img {
+    margin-left:50px;
+    border-radius: 10px;
+}
+#trending > img:hover {
+    width: 30%;
+    height: 35%;
+  }
+  h2 {
+      margin-top:30px;
+  }
+  #category {
+      width:100%;
+      height:300px;
+      display:flex;
+      margin-top: 15px;
+     
+  }
+  #category > div{
+      height:100%;
+      width:18%;
+      margin-left:2%;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+      border-radius:10px;
+      background-color:#ffffff;
+  }
+  h4 {
+      text-align: center;
+  }
+  body {
+      background-color: #f3f7fb;
+  }
+  #category >h3 {
+      color:green;
+  }
+  .membership {
+      height:150px;
+      width:100%;
+      margin-top:30px;
+      display:flex;
+      
+  }
+  .star {
+      height:100%;
+      width:10%;
+      
+  }
+  .service {
+      height:100%;
+      width:35%;
+      
+  }
+  .plans {
+      height:100%;
+      width:25%;
+      margin-left:40%;
+      display:flex;
+      
+  }
+  .plans>h3 {
+      color:#ef5898;
+      margin-top: 65px;
+      margin-left: 15px;
+  }
+  .plans>button {
+      width:140px;
+      height:50px;
+      background-color: #32aeb1 ;
+      color:#ffffff;
+      border-radius:5px;
+      font-family: LatoBold;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  h5 {
+      text-align: center;
+      color:green;
+      font-size: 15px;
+  }
+  .popular  {
+      margin-top:5%;
+  }
+  .footer{
+      height:130px;
+      width:100%;
+      display:flex;
+      background-color: #ffffff;
+      
+  }
+  .a {
+      height:50%;
+      width:25%;
+      margin-left:7%;
+      
+  }
+  .footerpage {
+      background-color: #ffffff;
+  }
+  .b {
+      height:50%;
+      width:50%;
+      margin-top: 1%;   
+  }
+  .footer1 {
+      height:500px;
+      width:90%;
+      margin:auto;
+      display:flex;
+      
+  }
+.c {
+    height:100%;
+    width:30%;
+   
+}
+.d {
+    height:100%;
+    width:20%;
+    
+}
+.e {
+    height:100%;
+    width:20%;
+    
+}
+.f{
+    height:100%;
+    width:30%;
+    
+}
+
+
+
+
+
+
+
+
+  
